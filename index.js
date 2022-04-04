@@ -163,7 +163,7 @@ const buscar = () => {
             `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
             D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
             `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy ${date}`,
-            `${table}`,
+            `${table} <br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
           ],
           typeSpeed: 75,
           contentType: "html",
@@ -180,7 +180,7 @@ const buscar = () => {
             `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
             D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
             `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy ${date}`,
-            `CM: No hay asteroides potenciales para hoy`,
+            `CM: No hay asteroides potenciales para hoy <br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
           ],
           typeSpeed: 75,
           contentType: "html",
@@ -199,7 +199,7 @@ const buscar = () => {
           `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
           D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
           `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy`,
-          `CM: No hay asteroides potencialmente peligrosos para hoy <br><br> <i style="font-style: normal; color:yellow">D1:Excelente</i>`,
+          `CM: No hay asteroides potencialmente peligrosos para hoy <br><br> <i style="font-style: normal; color:yellow">D1:Excelente</i><br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
         ],
         typeSpeed: 75,
         contentType: "html",

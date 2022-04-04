@@ -116,7 +116,7 @@ body {
 }
 .busqueda {
   font-family: Courier;
-  background-color: rgb(252, 0, 0);
+  background-color: rgb(252, 126, 0);
   color: rgb(109, 3, 3);
   font-size: 20px;
   font-weight: bold;
@@ -126,7 +126,7 @@ body {
   transition: background-color 1s;
 }
 .busqueda:hover {
-  background-color: rgb(163, 0, 0);
+  background-color: rgb(163, 81, 0);
 }
 
 /* IMG de Planeta */
@@ -147,6 +147,7 @@ body {
 .pla {
   width: inherit;
   z-index: 5;
+  object-fit: cover;
 }
 
 /*IMG TELESCOPIO*/
@@ -191,10 +192,10 @@ body {
 
 @keyframes mov {
   from {
-    margin-right: -100px;
+    margin-bottom: -600px;
   }
   to {
-    margin-right: 100px;
+    margin-bottom: 0px;
   }
 }
 
@@ -525,10 +526,10 @@ td {
   }
   @keyframes mov {
     from {
-      margin-right: -100px;
+      margin-bottom: -350px;
     }
     to {
-      margin-right: 50px;
+      margin-right: 0px;
     }
   }
   .as1 {
@@ -546,5 +547,34 @@ td {
   .planeta {
     height: 240px;
     object-fit: cover;
+  }
+  .container {
+    width: 300px;
+  }
+  .telescop,
+  .telescopD,
+  .telescopI {
+    height: 80px;
+    width: 80px;
+  }
+  .telescop {
+    bottom: -40px;
+    right: 38%;
+  }
+  .telescopD {
+    bottom: -330px;
+    right: 15%;
+  }
+  .telescopI {
+    right: 60%;
+    bottom: -200px;
+  }
+  .telescopD {
+    bottom: -200px;
+    right: 10%;
+  }
+  .telescopI {
+    right: 65%;
+    bottom: -120px;
   }
 }

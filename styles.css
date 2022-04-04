@@ -500,7 +500,7 @@ td {
     }
     to {
       /* margin-top: 150px; */
-      margin-left: 0px;
+      margin-left: 50px;
     }
   }
   @keyframes as3 {
@@ -547,7 +547,4 @@ td {
     height: 240px;
     object-fit: cover;
   }
-  /* .pla {
-    object-fit: cover;
-  } */
 }

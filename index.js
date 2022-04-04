@@ -163,7 +163,8 @@ const buscar = () => {
             `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
             D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
             `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy ${date}`,
-            `${table} <br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
+            `${table} <br><br> <i onclick="Inicio()" style="font-style: normal; 
+            color:yellow; pointer:cursor;">Regresar</i>`,
           ],
           typeSpeed: 75,
           contentType: "html",
@@ -180,7 +181,9 @@ const buscar = () => {
             `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
             D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
             `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy ${date}`,
-            `CM: No hay asteroides potenciales para hoy <br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
+            `CM: No hay asteroides potenciales para hoy <br>
+            <br> <i onclick="Inicio()" style="font-style: normal; color:yellow; 
+            pointer:cursor;">Regresar</i>`,
           ],
           typeSpeed: 75,
           contentType: "html",
@@ -199,7 +202,10 @@ const buscar = () => {
           `CM: Aquí control de misión, respondan cambio... ^5000 <br><br> <i style="font-style: normal; color:yellow">
           D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
           `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy`,
-          `CM: No hay asteroides potencialmente peligrosos para hoy <br><br> <i style="font-style: normal; color:yellow">D1:Excelente</i><br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; pointer:cursor;">Regresar</i>`,
+          `CM: No hay asteroides potencialmente peligrosos para hoy 
+          <br><br> <i style="font-style: normal; color:yellow">D1:Excelente</i>
+          <br><br> <i onclick="Inicio()" style="font-style: normal; color:yellow; 
+          pointer:cursor;">Regresar</i>`,
         ],
         typeSpeed: 75,
         contentType: "html",
@@ -213,4 +219,16 @@ const buscar = () => {
     });
 };
 
+const Inicio = () => {
+  document.getElementById("container").innerHTML = `
+  <div class="term" id="term">
+            <h1 class="Elige" id="Elige">Elige una Fecha</h1>
+            <br />
+            <div class="in" id="in">
+              <input type="date" class="date" id="date" placeholder="YYYY-MM-DD" />
+              <button class="busqueda" id="busqueda" onclick="buscar()">Conectar</button>
+            </div>
+          </div>
+  `;
+};
 //LINEA DE DESARROLLO

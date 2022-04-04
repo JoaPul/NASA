@@ -1,0 +1,553 @@
+/* Color Theme Swatches in Hex */
+/* .Into-the-spiderverse-1-hex { color: #1D2540; }
+.Into-the-spiderverse-2-hex { color: #304F8C; }
+.Into-the-spiderverse-3-hex { color: #375C8C; }
+.Into-the-spiderverse-4-hex { color: #3B668C; }
+.Into-the-spiderverse-5-hex { color: #D9665B; } */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: border-box; */
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+/* ---- stats.js ---- */
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #232741;
+  z-index: -1;
+  position: fixed;
+}
+/* contenedor de todo */
+.all {
+  /* position: relative; */
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Titulo */
+.Tit {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  /* position: relative;
+  top: 20px; */
+}
+.all .Tit .Titulo {
+  width: auto;
+  color: white;
+  font-size: 50px;
+  font-family: Arial;
+  text-align: center;
+  padding: 10px;
+  /* border-radius: 10px; */
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  /* position: relative; */
+  /* text-transform: capitalize; */
+  /* transition: font-size, 2s; */
+}
+
+/* Terminal de comunicacion */
+.cont {
+  grid-column: 2;
+  grid-row: 2;
+  /* margin-top: 60px; */
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.container {
+  width: 500px;
+  min-height: 150px;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Courier;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.term {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: inherit;
+  width: inherit;
+}
+.date {
+  font-family: Courier;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.busqueda {
+  font-family: Courier;
+  background-color: rgb(252, 0, 0);
+  color: rgb(109, 3, 3);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 70px;
+  width: 120px;
+  transition: background-color 1s;
+}
+.busqueda:hover {
+  background-color: rgb(163, 0, 0);
+}
+
+/* IMG de Planeta */
+.planeta {
+  background-color: transparent;
+  background-size: cover;
+  z-index: 98;
+  height: 500px;
+  width: inherit;
+  grid-column: 1/4;
+  grid-row: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  object-fit: cover;
+}
+.pla {
+  width: inherit;
+  z-index: 5;
+}
+
+/*IMG TELESCOPIO*/
+.telescop {
+  position: relative;
+  right: 49%;
+  bottom: -137px;
+  height: 130px;
+  width: 130px;
+  z-index: 4;
+}
+.telescopD {
+  position: relative;
+  right: 35%;
+  bottom: -410px;
+  height: 130px;
+  width: 130px;
+  z-index: 4;
+}
+.telescopI {
+  position: relative;
+  right: 63%;
+  bottom: -300px;
+  height: 130px;
+  width: 130px;
+  z-index: 4;
+}
+
+/*IMG DE NAVE*/
+.nave {
+  grid-column: 1;
+  grid-row: 2;
+  /* transform: rotate(90deg); */
+  height: auto;
+  width: auto;
+}
+.na {
+  height: 160px;
+  width: 160px;
+  animation: mov 5s infinite alternate;
+}
+
+@keyframes mov {
+  from {
+    margin-right: -100px;
+  }
+  to {
+    margin-right: 100px;
+  }
+}
+
+/*RESPUESTA CON LOS ASTEROIDES*/
+/* .res {
+  grid-column: 3;
+  grid-row: 2;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+} */
+
+/*TABLA DE RESPUESTAS*/
+table,
+th,
+td {
+  border: 1px solid white;
+}
+
+/*IMG de asteroides*/
+.asteroide {
+  grid-column: 3;
+  grid-row: 2;
+  height: 255px;
+  width: inherit;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.as1 {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 100px;
+  animation: as1 5s infinite alternate;
+}
+.as2 {
+  height: 100px;
+  width: 100px;
+  animation: as2 5s infinite alternate;
+}
+.as3 {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  left: 50px;
+  animation: as3 5s infinite alternate;
+}
+.as4 {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  right: 23px;
+  animation: as4 5s infinite alternate;
+}
+
+@keyframes as1 {
+  from {
+    /* margin-top: 50px; */
+    margin-right: 0px;
+  }
+  to {
+    /* margin-top: 100px; */
+    margin-right: 250px;
+  }
+}
+@keyframes as2 {
+  from {
+    /* margin-top: 0px; */
+    margin-left: 0px;
+  }
+  to {
+    /* margin-top: 150px; */
+    margin-left: 120px;
+  }
+}
+@keyframes as3 {
+  from {
+    /* margin-top: 20px; */
+    margin-right: 0px;
+  }
+  to {
+    /* margin-top: 80px; */
+    margin-right: 280px;
+  }
+}
+@keyframes as4 {
+  from {
+    /* margin-top: 50px; */
+    margin-left: 0px;
+  }
+  to {
+    /* margin-top: 100px; */
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .all {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 7fr 6fr;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .telescop {
+    bottom: -117px;
+  }
+  .telescopD {
+    bottom: -380px;
+  }
+  .telescopI {
+    bottom: -280px;
+  }
+  .planeta {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .telescop {
+    bottom: -100px;
+  }
+  .telescopD {
+    bottom: -360px;
+  }
+  .telescopI {
+    bottom: -240px;
+  }
+  .container {
+    width: inherit;
+  }
+  .all {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .all {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 5fr 5fr 5fr;
+  }
+  .cont {
+    height: inherit;
+  }
+
+  .as1 {
+    animation: as1 3s infinite alternate;
+  }
+  .as2 {
+    animation: as2 3s infinite alternate;
+  }
+  .as3 {
+    animation: as3 3s infinite alternate;
+  }
+  .as4 {
+    animation: as4 3s infinite alternate;
+  }
+
+  @keyframes as1 {
+    from {
+      /* margin-top: 50px; */
+      margin-right: 50px;
+    }
+    to {
+      /* margin-top: 100px; */
+      margin-right: 150px;
+    }
+  }
+  @keyframes as2 {
+    from {
+      /* margin-top: 0px; */
+      margin-left: 0px;
+    }
+    to {
+      /* margin-top: 150px; */
+      margin-left: 70px;
+    }
+  }
+  @keyframes as3 {
+    from {
+      /* margin-top: 20px; */
+      margin-right: 0px;
+    }
+    to {
+      /* margin-top: 80px; */
+      margin-right: 180px;
+    }
+  }
+  @keyframes as4 {
+    from {
+      /* margin-top: 50px; */
+      margin-left: 0px;
+    }
+    to {
+      /* margin-top: 100px; */
+      margin-left: 100px;
+    }
+  }
+
+  .all .Tit .Titulo {
+    border-top: 0px;
+    border-bottom: 0px;
+    grid-column: 1/3;
+  }
+  .cont {
+    grid-column: 1/3;
+    grid-row: 2;
+    width: 500px;
+  }
+  .nave {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .asteroide {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .planeta {
+    height: 250px;
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+
+  .telescop {
+    bottom: -90px;
+    right: 45%;
+  }
+  .telescopD {
+    bottom: -330px;
+    right: 25%;
+  }
+  .telescopI {
+    right: 63%;
+    bottom: -210px;
+  }
+}
+@media screen and (max-width: 655px) {
+  .all {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 4fr 4fr 2fr;
+  }
+  .all .Tit .Titulo {
+    font-size: 40px;
+  }
+  .Elige {
+    font-size: 25px;
+  }
+  .cont {
+    min-height: 100px;
+    width: auto;
+  }
+  .container {
+    min-height: 100px;
+    height: auto;
+    padding-bottom: 10px;
+    width: 400px;
+  }
+  .telescop {
+    bottom: -80px;
+    right: 38%;
+  }
+  .telescopD {
+    bottom: -330px;
+    right: 15%;
+  }
+  .telescopI {
+    right: 60%;
+    bottom: -200px;
+  }
+  .planeta {
+    height: 240px;
+  }
+  .asteroide {
+    height: auto;
+  }
+}
+@media screen and (max-width: 490px) {
+  .all {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+  }
+  .asteroide {
+    height: auto;
+  }
+  @keyframes as1 {
+    from {
+      /* margin-top: 50px; */
+      margin-right: 80px;
+    }
+    to {
+      /* margin-top: 100px; */
+      margin-right: 150px;
+    }
+  }
+  @keyframes as2 {
+    from {
+      /* margin-top: 0px; */
+      margin-left: 0px;
+    }
+    to {
+      /* margin-top: 150px; */
+      margin-left: 0px;
+    }
+  }
+  @keyframes as3 {
+    from {
+      /* margin-top: 20px; */
+      margin-right: 0px;
+    }
+    to {
+      /* margin-top: 80px; */
+      margin-right: 180px;
+    }
+  }
+  @keyframes as4 {
+    from {
+      /* margin-top: 50px; */
+      margin-left: 0px;
+    }
+    to {
+      /* margin-top: 100px; */
+      margin-left: 100px;
+    }
+  }
+  @keyframes mov {
+    from {
+      margin-right: -100px;
+    }
+    to {
+      margin-right: 50px;
+    }
+  }
+  .as1 {
+    height: 50px;
+    width: 50px;
+  }
+  .as2 {
+    height: 60px;
+    width: 60px;
+  }
+  .na {
+    height: 120px;
+    width: 120px;
+  }
+  .planeta {
+    height: 240px;
+    object-fit: cover;
+  }
+  /* .pla {
+    object-fit: cover;
+  } */
+}

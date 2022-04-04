@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Preguntale a "la caracola magica si la fecha dada moriras" -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./assets/asteroide.png" type="image/x-icon" />
+    <title>Asteroides</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <section class="all" id="all">
+      <!--HEADER-->
+      <div class="Tit" id="Tit">
+        <!-- <span>&#160;</span> -->
+        <h1 class="Titulo" id="Titulo">Asteroides potencialmente peligrosos</h1>
+      </div>
+
+      <!--MAIN-->
+      <div class="cont" id="cont">
+        <div class="container" id="container">
+          <!-- necesita se span para que funcioneeeee -->
+          <!-- <p>
+            <span class="Inicio" id="Inicio"></span>
+          </p> -->
+          <div class="term" id="term">
+            <h1 class="Elige" id="Elige">Elige una Fecha</h1>
+            <br />
+            <div class="in" id="in">
+              <input type="date" class="date" id="date" placeholder="YYYY-MM-DD" />
+              <button class="busqueda" id="busqueda" onclick="buscar()">Conectar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <section class="res" id="res">
+        <div class="respuesta" id="respuesta"><p>Recibiendo datos...</p></div>
+      </section> -->
+      <section class="asteroide" id="asteroide">
+        <img src="./assets/aste.png" alt="asteroide" class="as1" />
+        <img src="./assets/aste.png" alt="asteroide" class="as2" />
+        <img src="./assets/aste.png" alt="asteroide" class="as3" />
+        <img src="./assets/aste.png" alt="asteroide" class="as4" />
+      </section>
+      <section class="nave" id="nave">
+        <img src="./assets/nave.png" alt="Nave espacial" class="na" id="na" />
+      </section>
+      <div class="planeta" id="planeta">
+        <img src="./assets/telescopio.png" alt="Telescopio" class="telescopD" id="telescopD" />
+        <img src="./assets/telescopio.png" alt="Telescopio" class="telescopI" id="telescopI" />
+        <img src="./assets/telescopio.png" alt="Telescopio" class="telescop" id="telescop" />
+        <img src="./assets/montain.png" alt="Palaneta" class="pla" id="pla" />
+      </div>
+    </section>
+
+    <!-- LIBRERIAS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--DOCUMENTO JS-->
+    <script src="./index.js"></script>
+  </body>
+</html>

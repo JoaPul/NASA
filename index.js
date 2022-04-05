@@ -164,7 +164,7 @@ const buscar = () => {
             D1: Aquí Discovery 1, te recibimos fuerte y claro Control, cambio... ^7000 </i>`,
             `CM: Nos alegra escucharlo, nos acaban de llegar los datos de meteorología sobre los APP para hoy ${date}`,
             `${table} <br><br> <i onclick="Inicio()" style="font-style: normal; 
-            color:red; pointer:cursor;">Regresar</i>`,
+            color:red; pointer:cursor;">Click aquí para regresar a elegir fecha</i>`,
           ],
           typeSpeed: 75,
           contentType: "html",

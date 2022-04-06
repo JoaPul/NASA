@@ -113,6 +113,7 @@ particlesJS({
 //FUNCION PARA BUSCAR ASTEROIDES EN FECHA
 const buscar = () => {
   // const axios = require("axios"); no se necesita
+  document.getElementById("audio").play();
 
   const date = document.getElementById("date").value;
 

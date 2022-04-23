@@ -134,12 +134,12 @@ body {
   font-style: normal;
   color: rgb(252, 126, 0);
   cursor: pointer;
-  border: 3px solid rgb(252, 126, 0);
+  /* border: 3px solid rgb(252, 126, 0); */
   border-radius: 10px;
 }
 .reg:hover {
   color: rgb(163, 81, 0);
-  border: 3px solid rgb(163, 81, 0);
+  /* border: 3px solid rgb(163, 81, 0); */
 }
 
 /* IMG de Planeta */
